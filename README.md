@@ -1,4 +1,4 @@
-# blog
+# Vue JS Code Practice Code
 
 ## Project setup
 ```
