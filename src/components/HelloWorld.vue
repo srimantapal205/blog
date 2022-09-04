@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <p>{{cname}}</p> 
+    <h5>{{data.cename}}</h5>
+    <button @click="$emit('someEvent')">Event Click</button>
+    <button v-on:click="getData">Props Click</button>
      </div>
 </template>
 
@@ -8,8 +11,10 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    cname: String,
+    data: Object,
+    getData: Function,
+  },
 }
 </script>
 
